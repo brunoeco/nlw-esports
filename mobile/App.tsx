@@ -4,7 +4,7 @@ import {
   Inter_700Bold,
   Inter_900Black, useFonts
 } from "@expo-google-fonts/inter";
-import { StatusBar } from "react-native";
+import { ScrollView, StatusBar } from "react-native";
 
 import { Background } from './src/components/Background';
 import { Loading } from "./src/components/Loading";
@@ -26,8 +26,7 @@ export default function App() {
         backgroundColor={"transparent"}
         translucent
       />
-
-      {fontsLoaded ? <Home /> : <Loading />}
+        {fontsLoaded ? <Home /> : <Loading />}
     </Background>
   );
 }
